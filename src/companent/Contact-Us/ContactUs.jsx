@@ -5,13 +5,13 @@ import { Col } from "react-bootstrap";
 import s from "./ContactUs.module.scss";
 import img from "./../../img/34.png";
 import img1 from "./../../img/345.png";
+
 import ContactFooter from "./ContactFooter/ContactFooter";
 import headerimg from "./../../img/ggg.png";
 import { useTranslation } from "react-i18next";
 
 function ContactUs() {
-  const { t} = useTranslation();
-
+  const { t } = useTranslation();
 
   return (
     <div className={s.ContactUs}>
@@ -24,7 +24,7 @@ function ContactUs() {
             <div className={s.ContactUsHeader}>
               <p className={s.brandtext}>{t("about")}</p>
               <h1>{t("started")}</h1>
-              <p className="mt-5 mb-5">{t("abouttext1")}</p>
+              <p className={s.s}>{t("abouttext1")}</p>
             </div>
           </Col>
         </Row>
@@ -38,7 +38,7 @@ function ContactUs() {
             <div className={s.ContactUsRight}>
               <p className={s.brandtext}>{t("about")}</p>
               <h1>{t("started")}</h1>
-              <p>{t("abouttext2")}</p>
+              <p className={s.s}>{t("abouttext2")}</p>
             </div>
           </Col>
         </Row>
@@ -48,7 +48,7 @@ function ContactUs() {
             <div className={s.ContactUsRight}>
               <p className={s.brandtext}>{t("about")}</p>
               <h1>{t("abouttext4")}</h1>
-              <p>{t("abouttext3")}</p>
+              <p className={s.s}>{t("abouttext3")}</p>
             </div>
           </Col>
           <Col md="4" className="p-0">
